@@ -1,0 +1,13 @@
+services:
+  pong:
+    image: jvriguette/pong-server:1.0
+    container_name: pong
+    networks:
+      - solari-nw
+    ports:
+      - "8000:8000"
+
+
+networks:
+  solari-nw:
+    external: true
